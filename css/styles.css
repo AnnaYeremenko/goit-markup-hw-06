@@ -503,6 +503,9 @@ display: flex;
     height: 20px;
     fill: currentColor;
 }
+.subscribe {
+    margin-left: auto;
+}
 .subscribe-label {
     display: inline-block;
     margin-right: 12px;
@@ -515,6 +518,8 @@ display: flex;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: #FFFFFF;
+    outline: transparent;
 }
 .subscribe-input::placeholder {
     font-size: 16px;
@@ -713,7 +718,7 @@ display: flex;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
-    
+    letter-spacing: 0.03em;
  }
  .form-group {
     display: flex;
@@ -741,7 +746,7 @@ display: flex;
             color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
  }
  .form-input:focus {
-    outline: none;
+    outline: transparent;
     border: 1px solid var(--link-text-color);
  }
  .form-input::placeholder {
@@ -760,12 +765,17 @@ display: flex;
     fill: var(--link-text-color)
  }
  .form-comment {
+    outline: transparent;
     resize: none;
     height: 120px;
     padding: 10px 16px 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .form-comment:focus {
+    outline: transparent;
+    border: 1px solid var(--link-text-color);
  }
  .form-group-check {
     display: flex;
